@@ -11,6 +11,7 @@
     "test": "mocha test/setup.js --recursive src/**/*.test.js",
     "test:watch": "mocha -w test/setup.js --recursive src/**/*.test.js"
   },
+  "node": "v6.9",
   "repository": {
     "type": "git",
     "url": "https://github.com/gaearon/react-transform-boilerplate.git"
@@ -47,6 +48,7 @@
     "babel-register": "^6.16.3",
     "chai": "^3.5.0",
     "chai-enzyme": "^0.5.2",
+    "chai-spies": "^0.7.1",
     "cross-env": "1.0.8",
     "css-loader": "^0.25.0",
     "enzyme": "^2.5.1",
