@@ -6,14 +6,14 @@ import App from './App'
 
 chai.use(chaiEnzyme())
 
-const element = shallow(<App />)
+const app = shallow(<App />)
 
 describe('<App />', () => {
   it('contains a h1 tag', () => {
-    expect(element).to.have.tagName('h1')
+    expect(app).to.have.tagName('h1')
   })
 
   it('says Hello World', () => {
-    expect(element).to.have.text('Hello World!')
+    expect(app).to.have.text('Hello World!')
   })
 })
