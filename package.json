@@ -8,8 +8,8 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node devServer.js",
     "lint": "eslint src",
-    "test": "mocha test/setup.js --recursive src/**/*.test.js",
-    "test:watch": "mocha -w test/setup.js --recursive src/**/*.test.js"
+    "test": "mocha test/setup.js --recursive src/*.test.js src/**/*.test.js src/**/**/*.test.js",
+    "test:watch": "mocha -w test/setup.js -G --recursive src/*.test.js src/**/*.test.js src/**/**/*.test.js"
   },
   "node": "v6.9",
   "repository": {
@@ -49,6 +49,7 @@
     "chai": "^3.5.0",
     "chai-enzyme": "^0.5.2",
     "chai-spies": "^0.7.1",
+    "cheerio": "0.22.x",
     "cross-env": "1.0.8",
     "css-loader": "^0.25.0",
     "deep-freeze-node": "^1.1.2",

@@ -16,13 +16,15 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
-      },
-      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+      }
     }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
       }
+    }),
+    new webpack.ProvidePlugin({
+      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     })
   ],
   module: {
