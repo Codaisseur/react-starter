@@ -36,7 +36,8 @@ module.exports = {
         exclude: [/(node_modules|bower_components)/, /\.test\.jsx?$/],
         query: {
           presets: ['airbnb', 'react', 'es2015', 'stage-0']
-        }
+        },
+        plugins: ['transform-object-rest-spread'],
       },
       { test: /\.woff2?$/,      loader: "url-loader?limit=10000&minetype=application/font-woff" },
       { test: /\.ttf$/,         loader: "file-loader" },

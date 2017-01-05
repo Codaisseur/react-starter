@@ -35,6 +35,7 @@ module.exports = {
         query: {
           presets: ['airbnb', 'react', 'es2015', 'stage-0'],
           plugins: [[
+            'transform-object-rest-spread',
             'react-transform', {
               transforms: [{
                 transform: 'react-transform-hmr',
