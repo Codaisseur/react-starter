@@ -1,5 +1,5 @@
 require('babel-register')();
-require('ignore-styles').default(['.sass', '.scss']);
+require('ignore-styles').default(['.sass', '.scss', '.svg']);
 require('./linter');
 
 var jsdom = require('jsdom').jsdom;
