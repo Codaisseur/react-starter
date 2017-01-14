@@ -79,6 +79,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "breakpoint-sass": "^2.7.1",
     "jquery": "^3.0.0",
     "lodash": "^4.13.1",
     "material-ui": "^0.16.6",
