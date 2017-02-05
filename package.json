@@ -46,6 +46,7 @@
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.3",
+    "babel-root-import": "^4.1.5",
     "chai": "^3.5.0",
     "chai-enzyme": "^0.5.2",
     "chai-spies": "^0.7.1",

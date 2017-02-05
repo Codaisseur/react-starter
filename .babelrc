@@ -1,4 +1,9 @@
 {
-  "plugins": ["transform-object-rest-spread"],
-  "presets": ["airbnb", "react", "es2015", "stage-0"]
+  "presets": ["airbnb", "react", "es2015", "stage-0"],
+  "plugins": [
+    ["transform-object-rest-spread"],
+    ["babel-root-import", {
+      "rootPathSuffix": "src"
+    }]
+  ]
 }
